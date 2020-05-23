@@ -1,9 +1,9 @@
 # groceries-exercise
 
-#**Instructions**
-
-Using the Command line
+**Instructions**
 ---
+Using the Command line
+
 Create and activate a new Anaconda virtual environment:
 ---
 conda create -n groceries-env python=3.7 
