@@ -29,3 +29,19 @@ print(products)
 # pprint(products)
 
 # TODO: write some Python code here to produce the desired output
+#begins with dashed lines, then "THERE ARE XX PRODUCTS" then dashed lines
+#alphabetized
+#provide max ID on the products
+#Format: "+ " "name" ($XX.YY)
+
+
+
+#---
+#then, add the departments
+#dashed lines, "THERE ARE XX DEPARTMENTS" dashed lines
+#"+ " "Department" (X products)
+#HINT: use the filter() function or the filtering 
+#capabilities of a list comprehension to lookup all 
+# #products associated with any given department
+# #then use the len() function to count them
+
