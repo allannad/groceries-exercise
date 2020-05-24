@@ -41,43 +41,12 @@ print("THERE ARE " ,number_prods, " PRODUCTS")
 print ('-'*10)
 
 #remove irrelevant keys to create pared down dictionary
-#rem_list = ['id', 'department', 'aisle'] 
-#create new dictionary: updated_dict
-#[products.pop(key) for key in rem_list] 
-#products.pop('department')
-#products.pop('aisle')
-
-
-
 names = [x['name'] for x in products]
-
 prices = [x['price'] for x in products]
 formattedprices = ["($%.2f)" % x for x in prices]
 arr = {key: value for key, value in zip(names, formattedprices)}
-
-#print(arr)
 #now have items as keys, prices as values
 print('\n'.join("   + {} {}".format(k, v) for k, v in arr.items()))
-
-
-#BELOW CODE to use return sorted names
-#names = sorted(names)
-#print(sorted(names))
-#print(names[0])
-
-#name_price = names.append(prices)
-#print(name_price)
-
-#arr = names
-#arr2 = []
-#for i in arr:
-#  arr2.append(prices)
-#print(arr)
-#print(arr2) 
-
-
-
-
 #---
 #then, add the departments
 #dashed lines, "THERE ARE XX DEPARTMENTS" dashed lines
