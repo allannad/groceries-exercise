@@ -35,10 +35,16 @@ print(products)
 #Format: "+ " "name" ($XX.YY)
 seq = [x['id'] for x in products]
 number_prods = max(seq)
+#print(len(products))
 #print(number_prods)
 print('-'*10)
 print("THERE ARE " ,number_prods, " PRODUCTS:")
 print ('-'*10)
+
+#how to loop through and print name
+for x in products:
+    print(x["id"])
+
 
 #remove irrelevant keys to create pared down dictionary
 names = [x['name'] for x in products]
@@ -49,7 +55,9 @@ arr = {key: value for key, value in zip(names, formattedprices)}
 for key in sorted(arr.keys()):
     print(" + %s %s" % (key, arr[key]))
 
-#---
+
+
+#------------------------------------------------------------------------------------
 #then, add the departments
 #dashed lines, "THERE ARE XX DEPARTMENTS" dashed lines
 #"+ " "Department" (X products)
