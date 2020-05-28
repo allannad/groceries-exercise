@@ -42,8 +42,8 @@ print("THERE ARE " ,number_prods, " PRODUCTS:")
 print ('-'*10)
 
 #how to loop through and print name
-for x in products:
-    print(x["id"])
+#for x in products:
+#    print(x["id"])
 
 
 #remove irrelevant keys to create pared down dictionary
